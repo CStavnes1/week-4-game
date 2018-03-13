@@ -1,3 +1,10 @@
 body {
     background-color: aqua;
+    margin-left: 10%;
+}
+
+.col-sm-4 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5%;
 }

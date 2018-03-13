@@ -7,13 +7,10 @@ $( document ).ready(function() {
 //Variables
 
 let random_result = "";
-let lost = "";
-let win = "";
+let lost = 0;
+let win = 0;
 
-
-
-//Reset Func
-
+let guess= 0;
 
 
 
@@ -33,7 +30,45 @@ for (let i = 0; i < 4; i++) {
             $(".crystals").append(crystalValues);
 }
 
+
+
+
+//creating function for adding cystals together once clicked
+$('.col-sm-2').on('click', function () {
+    let crystalNumber = parseInt($(this).attr('value'));
+
+    let add = guess += crystalNumber
+
+    //displaying users score on page
+    $('.total-score').text(`Your total score: ${add}`);
+
+    if (add > randomFirstNumber) {
+        $('.score-update').text('You Lost!');
+        
+        let LossUpdate = lost--;
+        $('#lost').text(`Loss: ${lost}`); 
+
+       
+        
+    } else if (add === randomFirstNumber) 
+    $('.score-update').text('You Win!')
+        let winUpdate = win++;
+        $('#win').text(`Win: ${win}`); 
+
+});
+
+
+const clear = function() {
+    
+    $('.btn-info').on('click').clear(randomFirstNumber);
+
+   
+}
+
 })
     
+
+
+
 });
 

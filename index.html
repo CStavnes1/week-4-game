@@ -18,16 +18,13 @@
      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
      crossorigin="anonymous"></script>
     
-    <!-- Javacript Link-->
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-
 
 </head>
 <body>
 
     <!--Title-->
 <h1 class="header">CrystalsCollector!</h1>
-<h2 class="subheader">Welcome to the best game!</h2>
+<h2 class="subheader">Welcome to the game!</h2>
 
 
 <!--Main section of site-->
@@ -37,43 +34,54 @@
 <div class="row">
      <div class= "col-sm-12 directions">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, officia. Veritatis, obcaecati repellat quisquam blanditiis qui possimus ipsa eaque, tenetur velit, dolor porro. Facere a aspernatur vero cum natus perferendis?</div>
      <button id="button" type="button" class="btn btn-info">Start Game</button>
+     <button id="button" type="button" class="btn btn-info">Restart Game</button>
 </div>
 
 <!--Random Number and Users Score-->
 <div class="row">
      <div id="first-number" class="col-sm-4"></div>
-     <div class="col-sm-4 score">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, vel. Placeat, aspernatur perspiciatis temporibus aut odio ullam nisi? Pariatur, impedit? Harum ullam dolores fugiat sit rerum neque officia iste magnam.</div>
+     <div class="col-sm-4 score"></div>
 </div>
 
 <!--Crystal Images-->
 <div class="crystals">
         <div id="crystal" class="col-sm-2 images">
-            <img class="img-responsive" src="http://placehold.it/100x100" />
+            <img class="img-responsive" src="assets/images/yellowcrystal.jpeg" />
         </div>
         <div id="crystal" class="col-sm-2 images">
-            <img class="img-responsive" src="http://placehold.it/100x100" />
+            <img class="img-responsive" src="assets/images/green crystal.png" />
         </div>
         <div id="crystal" class="col-sm-2 images">
-            <img class="img-responsive" src="http://placehold.it/100x100" />
+            <img class="img-responsive" src="assets/images/redcrystal.png" />
         </div>
         <div id="crystal" class="col-sm-2 images">
-            <img class="img-responsive" src="http://placehold.it/100x100" />
+            <img class="img-responsive" src="assets/images/bluecrystal.png" />
         </div>
 </div>
 
 
 <!--Total Score of the turn-->
 <div class="row">
-    <div class="col-sm-4 total-score"></div>
+    <div class="col-sm-4 users-score">
+        <p id="win">Win:</p>
+        <p id="lost">Loss:</p>
+    </div>
 </div>
 
 <!--Score of current game being played-->
 <div class="row">
         <div class="col-sm-4 total-score"></div>
 </div>
-
+<div class="row">
+    <div class="col-sm-4 score-update"></div>
+</div>
 
 </div>
 
+<!-- Javacript Link-->
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </body>
+
+
 </html>
