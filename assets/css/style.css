@@ -8,3 +8,9 @@ body {
     font-size: 28px;
     margin-bottom: 5%;
 }
+
+.img-responsive {
+
+    height: 100px;
+    width: 100px
+}

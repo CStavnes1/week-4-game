@@ -9,7 +9,6 @@ $( document ).ready(function() {
 let random_result = "";
 let lost = 0;
 let win = 0;
-
 let guess= 0;
 
 
